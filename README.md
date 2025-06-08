@@ -235,6 +235,32 @@ kubectl get svc
 
 - Ensure all pods are `Running` and services are created.
 
+### 4. Manage Minikube Cluster
+
+#### Start Minikube
+
+```sh
+minikube start --driver=docker
+```
+
+- Starts the Minikube cluster.
+
+#### Stop Minikube
+
+```sh
+minikube stop
+```
+
+- Stops the running Minikube cluster without deleting resources.
+
+#### Delete Minikube
+
+```sh
+minikube delete
+```
+
+- Deletes the Minikube cluster and all associated resources.
+
 ---
 
 ## Accessing the Application

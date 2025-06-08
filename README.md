@@ -7,14 +7,18 @@ This project demonstrates a simple Kubernetes setup using Minikube, deploying a 
 ## Table of Contents
 
 - [Kubernetes Concepts](#kubernetes-concepts)
+- [What is Minikube?](#what-is-minikube)
+- [What is kubectl?](#what-is-kubectl)
 - [YAML File Explanations](#yaml-file-explanations)
-  - [mongo-secret.yaml](#mongo-secretyaml)
-  - [mongo-config.yaml](#mongo-configyaml)
-  - [mongo.yaml](#mongoyaml)
-  - [web-app.yaml](#web-appyaml)
+  - [mongo-secret.yaml](#1-mongo-secretyaml)
+  - [mongo-config.yaml](#2-mongo-configyaml)
+  - [mongo.yaml](#3-mongoyaml)
+  - [web-app.yaml](#4-web-appyaml)
 - [Step-by-Step Setup](#step-by-step-setup)
 - [Accessing the Application](#accessing-the-application)
 - [Notes](#notes)
+- [Troubleshooting](#troubleshooting)
+- [References](#references)
 
 ---
 
@@ -27,6 +31,16 @@ This project demonstrates a simple Kubernetes setup using Minikube, deploying a 
 - **ConfigMap**: Stores non-sensitive configuration data as key-value pairs.
 - **ReplicaSet**: Ensures a specified number of pod replicas are running at any given time (managed by Deployments).
 - **Label/Selector**: Used to organize and select groups of objects.
+
+---
+
+## What is Minikube?
+
+- **Minikube** is a tool that runs a single-node Kubernetes cluster locally on your machine. It is ideal for learning, development, and testing Kubernetes applications without needing a full cloud-based cluster.
+
+## What is kubectl?
+
+- **kubectl** is the command-line tool for interacting with Kubernetes clusters. It allows you to deploy applications, inspect and manage cluster resources, and view logs and events.
 
 ---
 
